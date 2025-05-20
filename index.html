@@ -1,1 +1,157 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Telegram Channel</title>
+  <style>
+    :root {
+      --telegram-blue: #2AABEE;
+      --telegram-blue-dark: #229ED9;
+      --light-gray: #F0F2F5;
+      --text-primary: #222222;
+      --text-secondary: #707579;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+      background-color: var(--light-gray);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .join-container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+      overflow: hidden;
+    }
+    
+    .channel-banner {
+      width: 100%;
+      height: 160px;
+      background-color: #E6E6E6;
+      overflow: hidden;
+    }
+    
+    .channel-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .channel-info {
+      padding: 24px;
+      text-align: center;
+    }
+    
+    .channel-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: -74px auto 16px;
+      background-color: var(--telegram-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border: 4px solid white;
+      overflow: hidden;
+    }
+    
+    .channel-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .channel-name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    
+    .channel-stats {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    
+    .channel-description {
+      color: var(--text-primary);
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    
+    .join-button {
+      background-color: var(--telegram-blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 32px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .join-button:hover {
+      background-color: var(--telegram-blue-dark);
+    }
+    
+    .preview-text {
+      margin-top: 16px;
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
+    
+    @media (max-width: 480px) {
+      .join-container {
+        border-radius: 0;
+      }
+      
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="join-container">
+    <div class="channel-banner">
+      <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Channel Banner">
+    </div>
+    
+    <div class="channel-info">
+      <div class="channel-avatar">
+        <img src="https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Channel Avatar">
+      </div>
+      
+      <h1 class="channel-name">Tech Enthusiasts</h1>
+      <div class="channel-stats">652 subscribers</div>
+      
+      <p class="channel-description">
+        A community for discussing the latest in technology, sharing resources, and connecting with like-minded tech lovers. Join our weekly discussions every Thursday at 7PM EST.
+      </p>
+      
+      <button class="join-button">Join Channel</button>
+      <p class="preview-text">Preview channel</p>
+    </div>
+  </div>
+</body>
+</html>
