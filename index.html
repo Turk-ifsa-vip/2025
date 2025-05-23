@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="4Br02Gpmz-TAp55_BxJmE4bThH6YZItMxp-PRFQwEnA" />
-  <title>Telegram Kanalımıza Katıl</title>
+  <title>Telegram Kanalımıza Katıl | Türk İfşa Vip</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -41,80 +42,86 @@
   </script>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to top right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
       color: #fff;
-      height: 100vh;
+      min-height: 100vh;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       position: relative;
-      text-align: center;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    .glow-effect {
+      animation: glow 2s ease-in-out infinite alternate;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      color: #e0e0e0;
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5), 0 0 20px rgba(0, 170, 255, 0.3);
+      }
+      to {
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.5);
+      }
     }
 
-    .btn {
-      padding: 15px 35px;
-      font-size: 1.1rem;
-      background: #00aaff;
-      color: #fff;
-      border: none;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 20px rgba(0,170,255,0.5);
-    }
-
-    .btn:hover {
-      background-color: #007acc;
-      transform: scale(1.05);
-    }
-
-    /* SVG Dalga */
     .wave {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: auto;
-      z-index: -1;
+      height: 150px;
+      z-index: 0;
     }
 
     .content {
-      z-index: 1;
-      padding: 20px;
+      z-index: 10;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .telegram-btn {
+      background: linear-gradient(45deg, #00aaff, #007acc);
+      transition: all 0.3s ease;
+    }
+
+    .telegram-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #007acc, #00aaff);
+    }
+
+    /* Parallax Background */
+    .bg-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: url('https://turk-ifsa-vip.github.io/2025/particles.png') repeat;
+      animation: particles 20s linear infinite;
+    }
+
+    @keyframes particles {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
     }
   </style>
 </head>
-<body>
-  <div class="content">
-    <h1>Telegram Kanalımıza Katıl!</h1>
-    <p>Gizli içerikler, özel duyurular ve güncel paylaşımlar seni bekliyor.</p>
-    <a href="https://t.me/+A26Qtbw6v_RiM2Zk" class="btn" target="_blank">Kanalımıza Git</a>
+<body class="flex items-center justify-center">
+  <div class="bg-particles"></div>
+  <div class="content text-center p-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 glow-effect">Türk İfşa Vip Kanalına Hoş Geldin!</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-8">
+      Özel içerikler, sır gibi saklanan paylaşımlar ve sadece seçkin üyeler için hazırlanmış bir topluluk seni bekliyor. Hemen katıl, ayrıcalığı yaşa!
+    </p>
+    <a href="https://t.me/+A26Qtbw6v_RiM2Zk" class="telegram-btn inline-block px-8 py-4 text-lg font-semibold text-white rounded-full shadow-lg glow-effect" target="_blank">
+      Hemen Kanalımıza Katıl!
+    </a>
   </div>
 
   <!-- Dalga Animasyonu SVG -->
   <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#00aaff" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,186.7C672,171,768,181,864,186.7C960,192,1056,192,1152,186.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    <path fill="#00aaff" fill-opacity="0.8" d="M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,186.7C672,171,768,181,864,186.7C960,192,1056,192,1152,186.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z">
       <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
       M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,186.7C672,171,768,181,864,186.7C960,192,1056,192,1152,186.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L0,320Z;
       M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,154.7C672,171,768,181,864,176C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L0,320Z;
@@ -122,5 +129,15 @@
       " />
     </path>
   </svg>
+
+  <script>
+    // Basit fare hareketine bağlı animasyon
+    document.addEventListener('mousemove', (e) => {
+      const btn = document.querySelector('.telegram-btn');
+      const x = e.clientX / window.innerWidth - 0.5;
+      const y = e.clientY / window.innerHeight - 0.5;
+      btn.style.transform = `translate(${x * 20}px, ${y * 20}px) scale(1.05)`;
+    });
+  </script>
 </body>
 </html>
